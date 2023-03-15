@@ -1,28 +1,29 @@
         <!DOCTYPE html>
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
 <html>
 <head>
- <title>Immagine e scritte</title>
+ <title class="titolo">Bellezze d'Italia</title>
 </head>
 <body>
 
- <h1>Immagini</h1>
+ <h1 class="testo">Bellezze d'Italia</h1>
 
  <div style="display: flex; flex-wrap: wrap;">
   <div style="flex: 1 1 50%;">
     <img src="{{url_for('static', filename='images/MilanoDuomo.jpg')}}" alt="Milano" width="100%" align="middle"/>
-    <p>Milano</p>
+    <p class="testo">Milano</p>
   </div>
   <div style="flex: 1 1 50%;">
    <img src="{{url_for('static', filename='images/Firenze.jpg')}}" alt="Firenze" width="100%" align="middle"/>
-   <p>Firenze</p>
+   <p class="testo">Firenze</p>
   </div>
   <div style="flex: 1 1 50%;">
     <img src="{{url_for('static', filename='images/Venezia.jfif')}}" alt="Venezia" width="100%" align="middle"/>
-    <p>Venezia</p>
+    <p class="testo">Venezia</p>
   </div>
   <div style="flex: 1 1 50%;">
     <img src="{{url_for('static', filename='images/Napoli.jpg')}}" alt="Napoli" width="100%" align="middle"/>
-    <p>Napoli</p>
+    <p class="testo">Napoli</p>
   </div>
  </div>
 </body>
