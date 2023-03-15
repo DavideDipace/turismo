@@ -1,0 +1,29 @@
+        <!DOCTYPE html>
+<html>
+<head>
+ <title>Immagine e scritte</title>
+</head>
+<body>
+
+ <h1>Immagini</h1>
+
+ <div style="display: flex; flex-wrap: wrap;">
+  <div style="flex: 1 1 50%;">
+    <img src="{{url_for('static', filename='images/MilanoDuomo.jpg')}}" alt="Milano" width="100%" align="middle"/>
+    <p>Milano</p>
+  </div>
+  <div style="flex: 1 1 50%;">
+   <img src="{{url_for('static', filename='images/Firenze.jpg')}}" alt="Firenze" width="100%" align="middle"/>
+   <p>Firenze</p>
+  </div>
+  <div style="flex: 1 1 50%;">
+    <img src="{{url_for('static', filename='images/Venezia.jfif')}}" alt="Venezia" width="100%" align="middle"/>
+    <p>Venezia</p>
+  </div>
+  <div style="flex: 1 1 50%;">
+    <img src="{{url_for('static', filename='images/Napoli.jpg')}}" alt="Napoli" width="100%" align="middle"/>
+    <p>Napoli</p>
+  </div>
+ </div>
+</body>
+</html>
